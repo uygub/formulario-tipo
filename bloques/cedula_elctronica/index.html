@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie6" lang="es"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7" lang="es"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8" lang="es"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="es"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Ingreso electrónico</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<a href="#contenido" class="visuallyhidden">Ir al contenido</a>
+
+<div class="container">
+    <div id="contenido" class="row">
+        <form action="POST" class="login">
+            <fieldset>
+				<legend>Seleccionar el tipo de acceso</legend>
+                <div class="selector-header"><h1>Ingresar a [Nombre del sistema]</h1></div>
+                <div class="selector-wrap">
+                    <a href="#" class="selector seleccionado usuario">CON USUARIO</a>
+                    <a href="#" class="selector cedula">CON CÉDULA ELECTRÓNICA</a>
+                </div>
+                <div id="tab1">
+                    <h2>Ingrese su usuario y contraseña</h2>
+                    <div class="row">
+                        <label for="mail">Usuario:</label>
+                        <span class="input-col">
+                                <input type="text" id="mail" />
+                            </span>
+                    </div>
+
+                    <div class="row">
+                        <label for="pass">Contraseña:</label>
+                        <span class="input-col">
+                                <input type="password" id="pass" />
+                                <a href="#" class="enlace-form left">Olvidé mi contraseña</a>
+                            </span>
+                    </div>
+
+                    <div class="row">
+                        <div>
+                            <input type="submit" value="Ingresar" />
+                           </div> <a href="#" class="cancelar-form left">Cancelar</a>
+                        
+                    </div>
+                </div>
+                <div id="tab2" class="hide">
+                    <h2>Ingrese su cédula electrónica en el lector</h2>
+                    <img src="img/cedula-lector.png" alt="Ingresar la cédula en el lector" />
+                    <div class="row">
+                        <div class="center margen">
+                            <a href="#" class="enlace-form">Cancelar</a>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="footer" class="row">
+        <div class="left">
+            <ul>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

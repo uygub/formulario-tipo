@@ -1,0 +1,146 @@
+
+<!--[if i]><![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="jsOff ie" lang="es-ES"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="jsOff" lang="es-ES"> <!--<![endif]-->
+<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="La descripción debe contener de 70 a 140 caracteres. Se hace referencia al contenido principal donde se muestran los átomos y moléculas del formulario tipo." />
+    <meta name="author" content="Nombre autor">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no" />
+	<title>Medios de pago</title>
+	<!-- FAVICON -->
+  	<link rel="shortcut icon" href="_img/favicon.ico" />
+    <!-- CSS/RESET-GENERAL-FORMULARIOTIPO-RESPONSIVE -->
+    <link rel="stylesheet" type="text/css" href="../_css/estilos-formulario-tipo.css" media="screen" />
+</head>
+
+<body role="document">
+    <div class="contenedorGeneral">
+        <div class="contGralContenido">
+            <h1>Medios de pago</h1>
+            <div class="box box-grey resumen">
+                <div class="box-content-padding45 align-to-form">
+                    <ul class="data-list">
+                        <li>
+                            <span>Resumen:</span>
+                            <ul class="group-list">
+                                <li>12345</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Concepto:</span>
+                            <ul class="group-list">
+                                <li>Timbre</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Total a pagar:</span>
+                            <ul class="group-list">
+                                <li>$5.370</li>
+                            </ul>
+                        </li>
+                        <li class="data-list-link"><a href="#">Ocultar detalle</a></li>
+                    </ul>
+                </div>
+            </div>
+            <table class="table-with-total">
+                <thead>
+                    <th>Detalles</th>
+                    <th>Valor</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><p>Convenio 123. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="texto-secundario">Cutota 1 de 10.</p>
+                        </td>
+                        <td class="align-right align-to-input-right">$4.143 <p class="texto-secundario">(5 UR)</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Mauris lobortis nunc nec nulla viverra, non blandit velit pharetra.</p> 
+                        </td>
+                        <td class="align-right align-to-input-right">$82.540 <p class="texto-secundario">(100 UR)</p></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            <ul class="data-list-total">
+                                <li class="align-center">Total</li>
+                                <li class="align-right align-to-input-right">$86.683</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <form>
+                <fieldset>
+                    <legend>Seleccione el medio de pago</legend>
+                    <ul class="form-group-list">
+                        <li class="full-width">
+                            <span class="label label-align-top">Medios de pago:</span>
+                            <ul class="group-list">
+                                <li>
+                                    <label for="opcionEnLinea">
+                                        <input type="radio" id="opcionEnLinea" name="opciones" value="opcionEnLinea" title="Opcion en linea" aria-checked="false">
+                                        <span>En linea (será redirigido a la página de pago)</span>
+                                        <span class="medios-pago">
+                                            <img src="_img/logo-visa.png" alt="visa">
+                                            <img src="_img/logo-bits.png" alt="bits">
+                                            <img src="_img/logo-brou.png" alt="brou">
+                                        </span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="opcionRedes">
+                                        <input type="radio" id="opcionRedes" name="opciones" value="opcionRedes" title="Opcion redes de cobranza">
+                                        <span>Redes de cobranza</span>
+                                        <span class="medios-pago">
+                                            <span class="medio">
+                                                <img src="_img/logo-abitab.png" alt="visa">
+                                                <a href="#">Locales Abitab</a>
+                                            </span>
+                                            <span class="medio">
+                                                <img src="_img/logo-redpagos.png" alt="redpagos">
+                                                <a href="#">Locales Redpagos</a>
+                                            </span>
+                                            <span class="medio">
+                                                <img src="_img/100x35.png" alt="oficina del organismo">
+                                                <a href="#">Oficinas del organismo</a>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="align-to-input">
+                                <div class="dialog-box dialog-warning">
+                                    <div class="dialog-icon">
+                                        <span class="icn icn-warning-lg"></span>
+                                    </div>
+                                    <div class="dialog-data">
+                                        <span class="dialog-title" style="padding-left: 0;">Atención</span>
+                                        <p>El trámite se iniciará una vez que se realice el pago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </fieldset>
+                <ul class="form-action-buttons">
+                    <li class="action-buttons-primary">
+                        <ul>
+                            <li>
+                                <button class="btn-lg btn-primario">Confirmar medio de pago</button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+
+<!--[if i]><![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="jsOff ie" lang="es-ES"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="jsOff" lang="es-ES"> <!--<![endif]-->
+<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="La descripción debe contener de 70 a 140 caracteres. Se hace referencia al contenido principal donde se muestran los átomos y moléculas del formulario tipo." />
+    <meta name="author" content="Nombre autor">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no" />
+	<title>Representación de Personas jurídicas</title>
+	<!-- FAVICON -->
+  	<link rel="shortcut icon" href="_img/favicon.ico" />
+    <!-- CSS/RESET-GENERAL-FORMULARIOTIPO-RESPONSIVE -->
+    <link rel="stylesheet" type="text/css" href="../_css/estilos-formulario-tipo.css" media="screen" />
+</head>
+
+<body role="document">
+    <div class="contenedorGeneral">
+        <div class="contGralContenido">
+            <h1>Representación de Personas jurídicas</h1>
+            <form>
+                <p class="form-required">Los campos indicados con * son obligatorios</p>
+                <fieldset>
+                    <legend>Representación de Personas jurídicas</legend>
+                    <fieldset>
+                        <legend>Empresa</legend>
+                        <ul class="form-group-list">
+                            <li>
+                                <label for="RUT">RUT:<span class="required">*</span></label>
+                                <input class="campo-md" id="RUT" name="RUT" type="text" value="">
+                            </li>
+                            <li>
+                                <label for="razonSocial">Razón social:<span class="required">*</span></label>
+                                <input class="campo-md" id="razonSocial" name="razonSocial" type="text" value="">
+                            </li>
+                            <li>
+                                <label for="rol">Rol:<span class="required">*</span></label>
+                                <select id="rol" name="rol">
+                                    <option selected="">Seleccionar rol</option>
+                                    <option>Opción</option>
+                                    <option>Opción</option>
+                                </select>
+                                <div class="rol-validado">
+                                    <span class="icn icn-circle-success"></span>
+                                    <p>Rol validado</p>
+                                </div>
+                            </li>
+                            <li class="full-width">
+                                <span class="label label-align-top">Validación:<span class="required">*</span></span>
+                                <ul class="group-list">
+                                    <li>
+                                        <label for="DGIoDGREC">
+                                        <input type="radio" id="DGIoDGREC" name="Validacion" value="DGIoDGREC" title="DGI o DGREC" checked="" aria-checked="false">
+                                        <span>Verificar en registro de DGI/DGREC</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="oficinas">
+                                        <input type="radio" id="oficinas" name="Validacion" value="oficinas" title="Oficinas del organismo" aria-checked="false">
+                                            <span>Presentar documentación en <a href="#">oficinas del organismo</a> o <a href="atencionciudadana.gub.uy">PAC</a></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="adjuntar">
+                                        <input type="radio" id="adjuntar" name="Validacion" value="adjuntar" title="Adjuntar certificado" aria-checked="true">
+                                            <span>Adjuntar certificado notarial electrónico (PDF max 45KB)</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="certificado" class="labelButton hide-read">Certificado:</label>
+                                        <input type="file" name="certificado" id="certificado">
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <a href="#" class="nested-fieldset-msg">+ Agregar empresa</a>
+                </fieldset>
+                <ul class="form-action-buttons">
+                    <li class="action-buttons-primary">
+                        <ul>
+                            <li>
+                                <button class="btn-lg btn-primario">Continuar &gt;&gt;</button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

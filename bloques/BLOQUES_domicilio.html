@@ -1,0 +1,91 @@
+
+<!--[if i]><![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="jsOff ie" lang="es-ES"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="jsOff" lang="es-ES"> <!--<![endif]-->
+<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="La descripción debe contener de 70 a 140 caracteres. Se hace referencia al contenido principal donde se muestran los átomos y moléculas del formulario tipo." />
+    <meta name="author" content="Nombre autor">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no" />
+	<title>Domicilio</title>
+	<!-- FAVICON -->
+  	<link rel="shortcut icon" href="_img/favicon.ico" />
+    <!-- CSS/RESET-GENERAL-FORMULARIOTIPO-RESPONSIVE -->
+    <link rel="stylesheet" type="text/css" href="../_css/estilos-formulario-tipo.css" media="screen" />
+</head>
+
+<body role="document">
+    <div class="contenedorGeneral">
+        <div class="contGralContenido">
+            <h1>Domicilio</h1>
+            <form>
+                <p class="form-required">Los campos indicados con * son obligatorios</p>
+                <fieldset>
+                    <legend>Domicilio</legend>
+                    <ul class="form-group-list">
+                        <li>
+                            <label for="departamento">Departamento:<span class="required">*</span></label>
+                            <select id="departamento" name="departamento">
+                                <option>Artigas</option>
+                                <option>Canelones</option>
+                                <option>Cerro Largo</option>
+                                <option>Colonia</option> 
+                                <option>Durazno</option>
+                                <option>Flores</option>
+                                <option>Florida</option>
+                                <option>Lavalleja</option>
+                                <option>Maldonado</option>
+                                <option selected>Montevideo</option>
+                                <option>Paysandú</option>
+                                <option>Rio Negro</option>
+                                <option>Rivera</option>
+                                <option>Rocha</option>
+                                <option>Salto</option>
+                                <option>San José</option>
+                                <option>Soriano</option>
+                                <option>Tacuarembó</option>
+                                <option>Treinta y Tres</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="localidad">Localidad:<span class="required">*</span></label>
+                            <select id="localidad" name="localidad">
+                                <option selected="">Seleccionar localidad</option>
+                                <option>Opción</option>
+                                <option>Opción</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="calle">Calle:<span class="required">*</span></label>
+                            <input id="calle" name="calle" type="text" value="">
+                        </li>
+                        <li>
+                            <label for="numero">Número:<span class="required">*</span></label>
+                            <input class="campo-sm" id="numero" name="numero" type="text" value="">
+                        </li>
+                        <li>
+                            <label for="otrosDatos">Otros datos:</label>
+                            <input id="otrosDatos" name="otrosDatos" type="text" value="">
+                            <span class="input-msg">Apto, bloque, etc</span>
+                        </li>
+                    </ul>
+                </fieldset>
+                <ul class="form-action-buttons">
+                    <li class="action-buttons-primary">
+                        <ul>
+                            <li>
+                                <button class="btn-lg btn-primario">Continuar &gt;&gt;</button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

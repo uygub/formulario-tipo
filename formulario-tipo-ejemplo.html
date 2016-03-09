@@ -1,0 +1,405 @@
+<!--[if i]><![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="jsOff ie" lang="es-ES"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="jsOff" lang="es-ES"> <!--<![endif]-->
+<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="La descripción debe contener de 70 a 140 caracteres. Se hace referencia al contenido principal donde se muestran los átomos y moléculas del formulario tipo." />
+    <meta name="author" content="Nombre autor">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no" />
+	<title>Portal Tipo | Ejemplo de Formulario Tipo</title>
+    <!-- FAVICON -->
+  	<link rel="shortcut icon" href="_img/favicon.ico" />
+    <!-- FANCYBOX POPUP -->
+	<link rel="stylesheet" href="_css/jquery.fancybox.css" type="text/css" media="screen" />
+    <!-- CSS/NORMALIZE -->
+    <link rel="stylesheet" type="text/css" href="_css/normalize.css" media="screen" />
+    <!-- CSS/ESTILOS DEL PORTAL TIPO *** REEMPLAZAR POR ESTILOS DE SU PORTAL *** -->
+    <link rel="stylesheet" type="text/css" href="_css/estilos-presentacion.css" media="screen" />
+    <!-- CSS/FORMULARIO TIPO -->
+    <link rel="stylesheet" type="text/css" href="_css/estilos-formulario-tipo.css" media="screen" />
+    <!-- JS/IE - SELECTORES HTML5 -->
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="_js/html5shiv.min.js"></script>
+	<![endif]-->
+	<!-- JS/JQUERY -->
+    <script type="text/javascript" src="_js/jquery-1.11.0.min.js"></script>
+	<!-- JS/MODERNIZR -->
+    <script type="text/javascript" src="_js/modernizr.js"></script>
+</head>
+
+<body role="document">
+	<div class="contenedorGeneral">
+    	<div class="contGralContenido">
+            <h1>Nombre del trámite</h1>
+            <ul class="wizard-nav-tabs wizard-nav-tabs-4">
+                <li>
+                    <a href="#" title="Paso 1">
+                        <span class="paso-validado">
+                          <span class="wizard-step">1</span>
+                          <span class="icn icn-circle-success"></span>
+                        </span>
+                        <span class="wizard-step-description">Nombre del paso completado</span>
+                    </a>
+                </li>
+                 <li class="active">
+                    <a href="#" title="Paso 2">
+                        <span class="wizard-step">2</span>
+                        <span class="wizard-step-description">Nombre del paso actual</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Paso 3">
+                        <span class="wizard-step">3</span>
+                        <span class="wizard-step-description">Nombre del paso</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Paso 4">
+                        <span class="wizard-step">4</span>
+                        <span class="wizard-step-description">Nombre del paso</span>
+                    </a>
+                </li>
+            </ul>
+            <h2>Nombre del paso actual</h2>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#" role="tab" data-toggle="tab" aria-expanded="true" onClick="return false">Pestaña activa</a></li>
+                <li role="presentation">
+                    <a href="#" role="tab" data-toggle="tab" aria-expanded="false" onClick="return false">Lorem ipsum</a></li>
+                <li role="presentation">
+                    <a href="#" data-toggle="tab" aria-expanded="false" onClick="return false">Otra pestaña</a>
+                </li>
+            </ul>
+            <h3>Nombre de la Pestaña activa</h3>
+            <div class="dialog-box dialog-success">
+                <div class="dialog-icon">
+                    <span class="icn icn-circle-success-lg"></span>
+                </div>
+                <div class="dialog-data">
+                    <span class="dialog-title">Título de mensaje de validación exitosa</span>
+                    <p>Mensaje de confirmación de que se ha realizado una acción en forma correcta.</p>
+                    <a href="#">Enlace de acción</a>
+                </div>
+            </div>
+            <form>
+                <p class="form-required">Los campos indicados con <span>*</span> son obligatorios</p>
+                <fieldset>
+                    <legend>Título de grupo de campos</legend>
+                    <ul class="form-group-list">
+                        <li>
+                            <label for="inputText">Etiqueta de campo común:</label>
+                            <input id="inputText" name="inputText" type="text" value="">
+                        </li>
+                        <li class="campo-compuesto">
+                            <label for="TipoDocumentoId">Documento de identidad:</label>
+                            <select id="TipoDocumentoId" class="campo-md" name="TipoDocumentoId">
+                                <option value="68909">C.I.</option>
+                                <option value="68912">Pasaporte</option>
+                            </select>
+                            <div class="group">
+                                <label for="Documento" class="hide-read">Número de documento:</label>
+                                <input autocomplete="off" id="Documento" name="Documento" type="text" value="">
+                                <span>Incluir dígito verificador</span>
+                            </div>
+                        </li>
+                        
+                        <li class="form-group-disabled">
+                            <label for="inputTexDisabled">Etiqueta de campo deshabilitado:</label>
+                            <input id="inputTexDisabled" name="inputTexDisabled" type="text" value="" disabled>
+                        </li>
+                        <li>
+                            <label for="select">Etiqueta de combo:</label>
+                            <select id="select" name="select">
+                                <option selected>Opción seleccionada de un combo</option>
+                                <option>Opción</option>
+                                <option>Opción</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="inputText">Dato de solo lectura:</label>
+                            <p class="lectura">Información ya ingresada</p>
+                        </li>
+                        <li>
+                            <label class="textarea" for="textarea1">Etiqueta:</label>
+                            <ul class="group-list">
+                                <li>Campo para texto extenso</li>
+                                <li>
+                                    <textarea id="textarea1" name="textarea1" placeholder="texto extenso"></textarea>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="label label-align-top">Etiqueta:</span>
+                            <ul class="group-list">
+                                <li>Grupo de opciones de Radio Button</li>
+                                <li>
+                                    <label for="opcionUno">
+                                    <input type="radio" id="opcionUno" name="opciones" value="opcionUno" title="Opción uno" aria-checked="false">
+                                    <span>Opción</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="opcionDos">
+                                        <input type="radio" id="opcionDos" name="opciones" value="opcionDos" title="Opción dos" checked aria-checked="true">
+                                        <span>Opción seleccionada</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="label label-align-top">Etiqueta:</span>
+                            <ul class="group-list">
+                                <li>Grupo de opciones de Checkbox</li>
+                                <li>
+                                    <label for="opcionCheckUno">
+                                        <input type="checkbox" id="opcionCheckUno" name="opcionesCheck" value="opcionCheckUno" title="Opción uno checkbox">
+                                        <span>Opción</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="opcionCheckDos">
+                                        <input type="checkbox" id="opcionCheckDos" name="opcionesCheck" value="opcionCheckDos" title="Opción dos checkbox" checked>
+                                        <span>Opción seleccionada</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="inputCalendar">Fecha:</label>
+                            <input type="date" id="inputCalendar" name="inputCalendar" class="campo-md">
+                        </li>
+                        <li>
+                            <label for="dato1">Dato uno:</label>
+                            <input id="dato1" name="dato1" type="text" value="">
+                        </li>
+                        <li>
+                            <label for="dato2">Dato dos:</label>
+                            <input id="dato2" name="dato2" type="text" value="">
+                            <a href="#" class="input-msg">Agregar otro dato</a>
+                        </li>
+                        <li>
+                                <label for="archivos" class="labelButton">Archivos:</label>
+                                <input type="file" name="archivos" id="archivos">
+                            </li>
+                        <li>
+                            <label for="select2">Etiqueta de combo requerido:<span class="required">*</span></label>
+                            <select id="select2" name="select2">
+                                <option value="" selected>Opción seleccionada de un combo</option>
+                                <optgroup label="Más frecuentes">
+                                    <option>Opción M</option>
+                                    <option>Opción F</option>
+                                    <option>Opción R</option>
+                                    <option>Opción K</option>
+                                </optgroup>
+                                <optgroup label="Todos">
+                                    <option>Opción A</option>
+                                    <option>Opción B</option>
+                                    <option>Opción C</option>
+                                    <option>Opción D</option>
+                                    <option>Opción E</option>
+                                    <option>Opción F</option>
+                                    <option>Opción G</option>
+                                    <option>Opción H</option>
+                                    <option>Opción I</option>
+                                    <option>Opción J</option>
+                                    <option>Opción K</option>
+                                    <option>Opción L</option>
+                                </optgroup>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="inputTextAyuda">Etiqueta de campo con ayuda:</label>
+                            <input id="inputTextAyuda" name="inputTextAyuda" type="text" value="">
+                            <button title="Seleccione según este criterio" class="tooltip" onClick="return false;">
+                                <span class="icn icn-circle-help"></span>
+                                <span class="hide-read">Ayuda</span>
+                            </button>
+                        </li>
+                        <li>
+                            <label for="inputTextRol">Etiqueta de campo con rol validado:</label>
+                            <input id="inputTextRol" name="inputTextRol" type="text" value="">
+                            <div class="rol-validado">
+                                <span class="icn icn-circle-success"></span>
+                                <p>Rol validado</p>
+                            </div>
+                        </li>
+                        <li class="form-error">
+                            <label for="inputCalendar2">Fecha:</label>
+                            <input type="date" id="inputCalendar2" name="inputCalendar2" class="campo-md">
+                            <span class="input-msg input-msg-error"><strong>ERROR</strong> - Debe ingresar una fecha</span>
+                            <div class="msIcon-sm">
+                                <span class="icn icn-circle-error"></span>
+                            </div>
+                            <div class="box-error">
+                                <span class="box-error-title">Error 2 de 3</span>
+                                <ul>
+                                    <li><a class="floatIzq" href="#">&#60;&#60; Anterior</a></li>
+                                    <li><a class="floatDer" href="#">Siguiente &#62;&#62;</a></li>
+                                </ul>
+                                <span class="icn icn-arrow-left-sm arrow"></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <fieldset>
+                        <legend>Título de subgrupo de campos</legend>
+                        <ul class="form-group-list">
+                            <li>
+                                <span class="label label-align-top">Etiqueta:</span>
+                                <ul class="group-list">
+                                    <li>Grupo de opciones de Radio Button</li>
+                                    <li>
+                                        <label for="opcionUnoB">
+                                        <input type="radio" id="opcionUnoB" name="opcionesB" value="opcionUnoB" title="Opción uno B" aria-checked="false">
+                                        <span>Opción</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="opcionDosB">
+                                            <input type="radio" id="opcionDosB" name="opcionesB" value="opcionDosB" title="Opción dos B" checked aria-checked="true">
+                                            <span>Opción seleccionada</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <span class="nested-fieldset-msg"><a href="#">+ Agregar otro fieldset igual</a></span>
+                    <fieldset>
+                        <legend>Cláusula de consentimiento informado</legend>
+                            <ul class="form-group-list">
+                                <li>
+                                    <p class="cursiva">"De conformidad con la Ley N° 18.331, de 11 de agosto de 2008, de Protección de Datos Personales y Acción de Habeas Data (LPDP), los datos suministrados por usted quedarán incorporados en una base de datos, la cual será procesada exclusivamente para la siguiente finalidad: **Objetivo del formulario**.</p>
+                                    <p>Los datos personales serán tratados con el grado de protección adecuado, tomándose las medidas de seguridad necesarias para evitar su alteración, pérdida, tratamiento o acceso no autorizado por parte de terceros que lo puedan utilizar para finalidades distintas para las que han sido solicitadas al usuario.</p>
+                                    <p>El responsable de la base de datos es **Titular de la base** y la dirección donde podrá ejercer los derechos de acceso, rectificación, actualización, inclusión o supresión, es **Dirección del organismo**, según lo establecido en la LPDP".</p>
+                                </li>
+                                <li>
+                                    <span class="label label-align-top">Términos de la cláusula:<span class="required">*</span></span>
+                                    <ul class="group-list">
+                                        <li>
+                                            <label for="clausulaAcepto"><input type="radio" id="clausulaAcepto" name="clausula" value="clausulaAcepto" title="Acepto la cláusula" aria-checked="false" required><span>Acepto los términos</span></label>
+                                        </li>
+                                        <li>
+                                            <label for="clausulaNoAcepto"><input type="radio" id="clausulaNoAcepto" name="clausula" value="clausulaNoAcepto" title="No acepto la cláusula" aria-checked="false" required><span>No acepto los términos. (No se enviará el mensaje)</span></label>
+                                        </li>
+                                    </ul>
+                                    <div class="clearFloat"></div>
+                                </li>
+                            </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Verificación de seguridad</legend>
+                        <ul class="form-group-list">
+                            <li>
+                                <label for="comprobacion">Comprobación de seguridad:<span class="required">*</span></label>
+                                <ul class="group-list">
+                                    <li>Escribe la tercera palabra de: Hoy está lloviendo</li>
+                                    <li><input type="text" id="comprobacion" name="comprobacion" title="Comprobación de seguridad" /></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <h4>Tabla de datos</h4>
+                    <table class="table-with-total">
+                <caption class="hide-read">Tabla genérica con datos de todo tipo</caption>
+                <thead>
+                    <tr>
+                        <th>Columna con botones</th>
+                        <th>Campos de texto</th>
+                        <th>Columna con combos de encabezado largo en dos líneas</th>
+                        <th>Título columna</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="align-center" data-title="Título columna 1"><input type="checkbox" title="Título del checkbox B" checked></td>
+                        <td data-title="Título columna 2"><input type="text" value="Input"  title="Título del input A"></td>
+                        <td class="align-to-input-left" data-title="Título columna 3">Solo lectura</td>
+                        <td class="align-right align-to-input-right" data-title="Título columna 4">$1.000</td>
+                    </tr>
+                    <tr>
+                        <td class="align-center" data-title="Título columna 1"><input type="radio" title="Título del radio A" checked aria-checked="true"></td>
+                        <td data-title="Título columna 2"><input type="text" value="Input" title="Título del input B"></td>
+                        <td data-title="Título columna 3">
+                            <select title="Título del select A">
+                                <option selected>Opción seleccionada</option>
+                                <option>Opción 2</option>
+                            </select>
+                        </td>
+                        <td class="align-right" data-title="Título columna 4"><input class="align-right" type="text" value="$1.001" title="Título del input C"></td>
+                    </tr>
+                    <tr>
+                        <td class="align-center" data-title="Título columna 1">
+                            <button class="button-no-style icn icn-error-sm hide-text-read" title="Eliminar" onClick="return false;">Eliminar documento</button>
+                        </td>
+                        <td class="align-to-input-left" data-title="Título columna 2">Solo lectura</td>
+                        <td class="align-left" data-title="Título columna 3">
+                            <select title="Título del select B">
+                                <option selected>Opción seleccionada</option>
+                                <option>Opción 2</option>
+                            </select>
+                        </td>
+                        <td class="align-right align-to-input-right" data-title="Título columna 4">$1.002</td>
+                    </tr>
+                    <tr>
+                        <td class="align-center" data-title="Título columna 1">
+                            <span class="icn icn-success-sm"></span>
+                        </td>
+                        <td class="align-to-input-left" data-title="Título columna 2">Solo lectura</td>
+                        <td class="align-to-input-left" data-title="Título columna 3">Solo lectura</td>
+                        <td class="align-right align-to-input-right" data-title="Título columna 4">$1.003</td>
+                    </tr>
+                    <tr>
+                        <td class="align-center" data-title="Título columna 1">
+                            <button class="button-no-style icn icn-edit-sm hide-text-read" title="Editar" onClick="return false;">Editar documento</button>
+                        </td>
+                        <td class="cell-hide-mobile"></td>
+                        <td class="cell-hide-mobile"></td>
+                        <td class="align-right align-to-input-right" data-title="Título columna 4">$1.004</td>
+                    </tr>
+                </tbody>
+                
+                <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            <ul class="data-list-total">
+                                <li class="align-center">Total</li>
+                                <li class="align-right align-to-input-right">$5.010</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+                </fieldset>
+                <ul class="form-action-buttons">
+                    <li class="action-buttons-primary">
+                        <ul>
+                            <li>
+                                <button class="btn-lg btn-primario">Continuar al paso siguiente &gt;&gt;</button>
+                            </li>
+                            <li>
+                                <button class="btn-lg btn-secundario">Acción secundaria</button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="action-buttons-second">
+                        <ul>
+                            <li class="float-left">
+                                <button class="btn-lg btn-link">&lt;&lt; Volver al paso anterior</button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </form>
+		</div>
+    </div> <!-- /container -->
+
+    <!-- Javascripts
+    ================================================== -->
+    <script type="text/javascript" src="_js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="_js/scripts.js"></script>
+</body>
+</html>
